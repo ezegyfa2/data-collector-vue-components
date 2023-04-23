@@ -1,0 +1,22 @@
+@import '../../styles/variables';
+@import '~bootstrap/scss/bootstrap';
+@import '../../../../blue-admin-vue-components/src/Table/Table/Style.scss';
+@import '../../../../blue-admin-vue-components/src/Table/CreateButton/Style.scss';
+
+table {
+    color: $adevarul-text-color;
+}
+
+.card-header-bg {
+    background-color: $adevarul-lightblue;
+}
+
+.btn-create {
+    color: $white;
+    background-color: $adevarul-text-color;
+}
+
+.btn-create:hover {
+    color: $white;
+    opacity: 0.8;
+}

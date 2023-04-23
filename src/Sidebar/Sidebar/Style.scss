@@ -1,0 +1,9 @@
+@import '../../styles/variables';
+@import '~bootstrap/scss/bootstrap';
+@import '../../styles/utilities';
+@import '../../../../blue-admin-vue-components/src/Sidebar/Sidebar/Style.scss';
+
+.sidebar-bg-gradient {
+    background: linear-gradient($adevarul-lightblue, $adevarul-darkblue);
+    font-family: $font-family-sans-serif;
+}

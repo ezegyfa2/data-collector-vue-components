@@ -1,0 +1,7 @@
+@import '../../../styles/variables';
+@import '~bootstrap/scss/bootstrap';
+@import '../../../../../helper-vue-components/src/IconLinks/EditIconLink/Style.scss';
+
+.btn-edit {
+    background-color: $adevarul-lightblue;
+}
