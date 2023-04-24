@@ -27,6 +27,20 @@ export default {
 		);
 
 		registerVueComponent(
+			'data-collector-form',
+			require('./Forms/AdminForm/Component.vue').default,
+			Vue,
+			'data-collector-vue-components/src/Forms/AdminForm/Component.vue'
+		);
+
+		registerVueComponent(
+			'bootstrap-form',
+			require('./Forms/Form/Component.vue').default,
+			Vue,
+			'data-collector-vue-components/src/Forms/Form/Component.vue'
+		);
+
+		registerVueComponent(
 			'data-collector-sidebar',
 			require('./Sidebar/Sidebar/Component.vue').default,
 			Vue,
