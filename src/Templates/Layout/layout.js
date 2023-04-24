@@ -1,18 +1,18 @@
 export default {
-    "type": "blue-admin-page",
+    "type": "data-collector-page",
     "data": {
         "sidebar_section": {
-            "template_type_name": "blue_admin_sidebar",
+            "template_type_name": "data_collector_sidebar",
             "params": {
                 "sidebar_sections": "-++sidebar_sections"
             }
         },
         "navigation_bar_section": {
-            "type": "blue-admin-navigation-bar"
+            "type": "data-collector-navigation-bar"
         },
         "content_sections": [
             {
-                "type": "blue-admin-centered-content",
+                "type": "data-collector-centered-content",
                 "data": {
                     "content_sections": [
                         {

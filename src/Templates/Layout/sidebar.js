@@ -1,8 +1,8 @@
 export default {
-    "type": "blue-admin-sidebar",
+    "type": "data-collector-sidebar",
     "data": {
         "brand_section": {
-            "type": "blue-admin-sidebar-brand-icon",
+            "type": "data-collector-sidebar-brand-icon",
             "data": {
                 "url": "/",
                 "icon_class": "fas fa-laugh-wink",

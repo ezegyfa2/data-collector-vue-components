@@ -1,9 +1,9 @@
 export default {
-    "template_type_name": "blue_admin_layout",
+    "template_type_name": "data_collector_layout",
     "params": {
         "content_sections": [
             {
-                "type": "blue-admin-form",
+                "type": "data-collector-form",
                 "data": "++form_data"
             }
         ]
