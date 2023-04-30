@@ -1,9 +1,46 @@
 @import '../../styles/variables';
 @import '~bootstrap/scss/bootstrap';
-@import '../../styles/utilities';
+@import '../../../../blue-admin-vue-components/src/styles/utilities';
 @import '../../../../blue-admin-vue-components/src/Sidebar/Sidebar/Style.scss';
 
 .sidebar-bg-gradient {
-    background: linear-gradient($adevarul-lightblue, $adevarul-darkblue);
+    background: $adevarul-sidebar-bg;
     font-family: $font-family-sans-serif;
+}
+
+.sidebar-brand, .sidebar-heading {
+    color: $adevarul-text-color;
+}
+
+hr.sidebar-divider {
+    border-top: 1px solid $adevarul-primary;
+}
+
+.sidebar {
+    &.toggled {
+    
+        #sidebarToggle::after {
+            color: $adevarul-primary;
+            opacity: 0.5;
+        }
+    }
+}
+
+#sidebarToggle {
+    background-color: $adevarul-primary;
+    opacity: 0.8;
+
+    &::after {
+        color: $adevarul-primary;
+        opacity: 0.5;
+    }
+
+    &:hover {
+        background-color: $adevarul-text-color-light;
+        opacity: 0.75;
+    }
+
+    &:focus {
+        outline: none;
+    }
 }
