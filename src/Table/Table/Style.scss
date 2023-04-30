@@ -8,7 +8,12 @@ table {
 }
 
 .card-header-bg {
-    background-color: $adevarul-lightblue;
+    background-color: $adevarul-page-bg;
+    border-bottom: 0.1rem solid $adevarul-primary;
+}
+
+.card-header {
+    color: $adevarul-text-color;
 }
 
 .btn-create {
@@ -19,4 +24,13 @@ table {
 .btn-create:hover {
     color: $white;
     opacity: 0.8;
+}
+
+.card-body-header {
+    background-color: $adevarul-sidebar-bg;
+    border-bottom: 0.1rem solid $adevarul-border-color;
+}
+
+.active {
+    color: $adevarul-primary;
 }
