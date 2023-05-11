@@ -5,6 +5,16 @@
         mixins: [
             TableWithEditButtons,
         ],
+        props: {
+            edit_icon_link_type: {
+                type: String,
+                default: 'data-collector-edit-icon-link'
+            },
+            delete_icon_link_type: {
+                type: String,
+                default: 'delete-icon-link'
+            }
+        }
     }
 </script>
 

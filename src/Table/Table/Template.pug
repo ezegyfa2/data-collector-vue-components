@@ -5,7 +5,7 @@
         .d-flex.card-body-header.p-3
             .col-sm-12.col-md-6.p-0
                 label
-                    p Show
+                    p Showh
                     blue-admin-table-select(
                         v-bind:value.sync='selected_row_to_show_count'
                         v-bind:options='row_to_show_counts'
@@ -14,13 +14,13 @@
                     )
                     p entries
             .col-sm-12.col-md-6.p-0.create_button_container
-                blue-admin-create-button(
+                data-collector-create-button(
                     content='Create'
                     icon_class='fas fa-plus'
                     v-bind:url='createUrl'
                 )
         .card-body
-            vue-table-with-edit-buttons(
+            data-collector-table-with-edit-buttons(
                 v-bind:column_names='column_names'
                 v-bind:rows='rows'
                 v-bind:with_footer='true'
@@ -32,7 +32,7 @@
                 .col-sm-12.col-md-12.extra-margin.col-lg-5
                     .dataTables_info(role='status' aria-live='polite') {{ description }}
                 .col-sm-12.col-md-12.col-lg-7
-                    bootstrap-pagination(
+                    data-collector-pagination(
                         v-bind:page_count='pageCount' 
                         v-bind:selected_page_number.sync='selected_page_number'
                         v-bind:url_enabled='false'

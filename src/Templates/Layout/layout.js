@@ -7,12 +7,9 @@ export default {
                 "sidebar_sections": "-++sidebar_sections"
             }
         },
-        "navigation_bar_section": {
-            "type": "data-collector-navigation-bar"
-        },
         "content_sections": [
             {
-                "type": "data-collector-centered-content",
+                "type": "blue-admin-centered-content",
                 "data": {
                     "content_sections": [
                         {

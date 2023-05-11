@@ -3,7 +3,7 @@ export default {
     "params": {
         "content_sections": [
             {
-                "type": "data-collector-form",
+                "type": "data-collector-admin-form",
                 "data": "++form_data"
             }
         ]

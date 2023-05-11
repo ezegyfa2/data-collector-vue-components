@@ -13,28 +13,14 @@ export default {
 		);
 
 		registerVueComponent(
-			'data-collector-centered-content-page',
-			require('./CenteredContentPage/Component.vue').default,
-			Vue,
-			'data-collector-vue-components/src/CenteredContentPage/Component.vue'
-		);
-
-		registerVueComponent(
-			'data-collector-centered-content',
-			require('./CenteredContent/Component.vue').default,
-			Vue,
-			'data-collector-vue-components/src/CenteredContent/Component.vue'
-		);
-
-		registerVueComponent(
-			'data-collector-form',
+			'data-collector-admin-form',
 			require('./Forms/AdminForm/Component.vue').default,
 			Vue,
 			'data-collector-vue-components/src/Forms/AdminForm/Component.vue'
 		);
 
 		registerVueComponent(
-			'bootstrap-form',
+			'data-collector-form',
 			require('./Forms/Form/Component.vue').default,
 			Vue,
 			'data-collector-vue-components/src/Forms/Form/Component.vue'
@@ -48,13 +34,6 @@ export default {
 		);
 
 		registerVueComponent(
-			'data-collector-navigation-bar',
-			require('./NavigationBar/NavigationBar/Component.vue').default,
-			Vue,
-			'data-collector-vue-components/src/NavigationBar/NavigationBar/Component.vue'
-		);
-
-		registerVueComponent(
 			'data-collector-table',
 			require('./Table/Table/Component.vue').default,
 			Vue,
@@ -62,14 +41,35 @@ export default {
 		);
 
 		registerVueComponent(
-            'vue-table-with-edit-buttons',
+            'data-collector-table-with-edit-buttons',
             require('./Table/TableWithEditButtons/Component.vue').default,
             Vue,
             'data-collector-vue-components/src/Table/TableWithEditButtons/Component.vue'
         );
 
 		registerVueComponent(
-            'edit-icon-link',
+            'data-collector-create-button',
+            require('./Table/CreateButton/Component.vue').default,
+            Vue,
+            'data-collector-vue-components/src/Table/CreateButton/Component.vue'
+        );
+
+		registerVueComponent(
+            'data-collector-pagination',
+            require('./Pagination/Pagination/Component.vue').default,
+            Vue,
+            'data-collector-vue-components/src/Pagination/Pagination/Component.vue'
+        );
+
+		registerVueComponent(
+            'data-collector-pagination-item',
+            require('./Pagination/Item/Component.vue').default,
+            Vue,
+            'data-collector-vue-components/src/Pagination/Item/Component.vue'
+        );
+
+		registerVueComponent(
+            'data-collector-edit-icon-link',
             require('./Table/IconLinks/EditIconLink/Component.vue').default,
             Vue,
             'data-collector-vue-components/src/Table/IconLinks/EditIconLink/Component.vue'

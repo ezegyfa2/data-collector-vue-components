@@ -1,36 +1,29 @@
 @import '../../styles/variables';
-@import '~bootstrap/scss/bootstrap';
 @import '../../../../blue-admin-vue-components/src/Table/Table/Style.scss';
 @import '../../../../blue-admin-vue-components/src/Table/CreateButton/Style.scss';
 
 table {
-    color: $adevarul-text-color;
+    color: $primary-color;
 }
 
 .card-header-bg {
-    background-color: $adevarul-page-bg;
-    border-bottom: 0.1rem solid $adevarul-primary;
+    background-color: white;
 }
 
 .card-header {
-    color: $adevarul-text-color;
-}
-
-.btn-create {
-    color: $white;
-    background-color: $adevarul-text-color;
-}
-
-.btn-create:hover {
-    color: $white;
-    opacity: 0.8;
+    color: $primary-color;
+    box-shadow: 1px -8px 11px -11px rgba(0, 0, 0, 0.35) inset;
 }
 
 .card-body-header {
-    background-color: $adevarul-sidebar-bg;
-    border-bottom: 0.1rem solid $adevarul-border-color;
+    background-color: $third-color;
+    border-bottom: 0.1rem solid $secondary-color;
 }
 
 .active {
-    color: $adevarul-primary;
+    color: $primary-color;
+}
+
+.container-fluid {
+    margin-top: 3rem;
 }

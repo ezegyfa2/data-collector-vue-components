@@ -1,10 +1,9 @@
 @import '../../styles/variables';
-@import '~bootstrap/scss/bootstrap';
 
 .form-item.form-group {
     margin-bottom: 1rem;
 }
 
 button.btn-form {
-    background-color: $adevarul-text-color;
+    background-color: $primary-color;
 }
