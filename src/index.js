@@ -34,6 +34,13 @@ export default {
 		);
 
 		registerVueComponent(
+			'data-collector-sidebar-brand-icon',
+			require('./Sidebar/BrandIcon/Component.vue').default,
+			Vue,
+			'data-collector-vue-components/src/Sidebar/BrandIcon/Component.vue'
+		);
+
+		registerVueComponent(
 			'data-collector-table',
 			require('./Table/Table/Component.vue').default,
 			Vue,

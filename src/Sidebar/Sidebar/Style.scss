@@ -1,14 +1,18 @@
 @import '../../styles/variables';
 
+.sidebar {
+    margin-left: 0.75rem;
+}
+
 .sidebar-bg-gradient {
-    background: white;
+    background: $primary-bg-color;
     font-family: $primary-font-family;
 }
 
-.sidebar-brand, .sidebar-heading {
+.sidebar-brand, .sidebar-heading, .nav-item {
     color: $primary-color;
     &:hover {
-        color: $secondary-color;
+        color: $primary-color-light;
     }
 }
 
@@ -17,30 +21,31 @@ hr.sidebar-divider {
 }
 
 .sidebar {
-    background-color: $third-color;
-    border-right: $secondary-color 1px solid;
-    &.toggled {
+    #sidebarToggle {
+        width: 2.5rem;
+        height: 2.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        background-color: $primary-color;
+        opacity: 1;
     
-        #sidebarToggle::after {
-            color: $primary-color;
-            opacity: 0.5;
+        &::after {
+            color: $light-color;
+            font-weight: 900;
+            content: '\f104';
+            font-family: 'Font Awesome 5 Free';
+            opacity: 1;
         }
-    }
-}
-
-#sidebarToggle {
-    background-color: $primary-color;
-
-    &::after {
-        color: $primary-color;
-        opacity: 0.5;
-    }
-
-    &:hover {
-        background-color: $third-color;
-    }
-
-    &:focus {
-        outline: none;
+    
+        &:hover {
+            background-color: $third-color !important;
+            opacity: 1;
+            text-decoration: none;
+        }
+    
+        &:focus {
+            outline: none;
+        }
     }
 }

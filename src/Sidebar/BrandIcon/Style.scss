@@ -1,0 +1,56 @@
+@import '../../styles/variables';
+@import '~bootstrap/scss/bootstrap';
+
+.sidebar-brand {
+    height: $topbar-base-height;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 1.5rem 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    z-index: 1;
+    color: $primary-color;
+    
+    .sidebar-brand-icon {
+        font-size: 1.5rem;
+    }
+
+    .sidebar-brand-text {
+        display: none;
+    }
+
+    &:hover {
+        color: $primary-color-light;
+
+        i, svg {
+            color: $primary-color-light;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .sidebar-brand {
+        .sidebar-brand-icon i, svg {
+            font-size: 1.5rem;
+        }
+
+        .sidebar-brand-text {
+            display: inline;
+        }
+    }
+    
+    .sidebar-brand {
+        &.toggled {
+            .sidebar-brand-icon i, svg {
+                font-size: 1.5rem;
+            }
+
+            .sidebar-brand-text {
+                display: none;
+            }
+        }
+    }
+}

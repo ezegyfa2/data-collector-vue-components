@@ -1,4 +1,11 @@
 $primary-color: #36393d !default;
+$primary-bg-color: white;
+$primary-color-light: #54585e;
 $secondary-color: #dfdfdf !default;
 $third-color: rgba(84,181,213,0.05) !default;
 $primary-font-family: Georgia, "Times New Roman", Times, serif !default;
+
+$light-color: $primary-bg-color;
+
+$topbar-base-height: 4.375rem !default;
+$sidebar-collapsed-width: 6.5rem !default;
