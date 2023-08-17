@@ -1,51 +1,55 @@
 @import '../../styles/variables';
-
-.sidebar {
-    margin-left: 0.75rem;
-}
+@import '../../../../blue-admin-vue-components/src/Sidebar/Sidebar/Style.scss';
 
 .sidebar-bg-gradient {
     background: $primary-bg-color;
     font-family: $primary-font-family;
 }
 
-.sidebar-brand, .sidebar-heading, .nav-item {
+.nav-item li {
     color: $primary-color;
     &:hover {
-        color: $primary-color-light;
+        color: $third-color;
     }
 }
 
 hr.sidebar-divider {
     border-top: 1px solid $primary-color;
+    margin: 0 0 0 1rem;
 }
 
 .sidebar {
-    #sidebarToggle {
-        width: 2.5rem;
-        height: 2.5rem;
-        text-align: center;
-        margin-bottom: 1rem;
-        cursor: pointer;
-        background-color: $primary-color;
+    margin-left: 0.75rem;
+    &.toggled {
+        #sidebarToggle {
+            &::after {
+                color: $light-color;
+                opacity: 1;
+            }
+            &:hover {
+                color: $primary-color;
+                background-color: $primary-color-light;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+#sidebarToggle {
+    background-color: $primary-color;
+    opacity: 1;
+
+    &::after {
+        color: $light-color;
         opacity: 1;
-    
-        &::after {
-            color: $light-color;
-            font-weight: 900;
-            content: '\f104';
-            font-family: 'Font Awesome 5 Free';
-            opacity: 1;
-        }
-    
-        &:hover {
-            background-color: $third-color !important;
-            opacity: 1;
-            text-decoration: none;
-        }
-    
-        &:focus {
-            outline: none;
-        }
+    }
+
+    &:hover {
+        background-color: $primary-color-light;
+        opacity: 1;
+    }
+
+    &:focus {
+        outline: none;
     }
 }
