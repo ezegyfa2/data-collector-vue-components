@@ -4,7 +4,12 @@
     export default {
         mixins: [
             Form,
-        ]
+        ],
+        data() {
+            return {
+                formItemTypePrefix: 'data-collector-admin'
+            }
+        }
     }
 </script>
 
