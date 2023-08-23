@@ -7,3 +7,7 @@
         ]
     }
 </script>
+
+<style lang="scss" scoped>
+    @import "../filterFormStyle.scss";
+</style>

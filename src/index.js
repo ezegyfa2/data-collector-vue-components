@@ -4,6 +4,7 @@ export default {
 
 		require('./Templates/templateRegister').default.install()
 		require('./FilterFormItems/register').default.install(Vue)
+		require('./Forms/FormItems/register').default.install(Vue)
 
 		registerVueComponent(
 			'data-collector-page', 
